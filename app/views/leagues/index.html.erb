@@ -1,0 +1,7 @@
+<h1>2022 World Cup Teams</h1>
+<%= @leagues.each do |league| %>
+  <h3><%= league.country %></h3>
+  <p>WC Rank: <%= league.rank %></p>
+  <p>WC Qualified: <%= league.qualified %></p>
+  <p>Total Points: <%= league.total_points %></p>
+<% end %>
